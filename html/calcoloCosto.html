@@ -1,0 +1,25 @@
+<span id="messaggi">{messaggi}</span>
+<h1>Calcolo costo prenotazione</h1>
+<h2 class="titoloCentro">Fattura per l'appartamento: {appartamento}</h2>
+<ul class="listaCosto">
+    <li>Nome: {nome} </li>
+    <li>Cognome: {cognome}</li>
+    <li>Codice Fiscale: {cf}</li>
+    <li>P. IVA: {piva}</li>
+</ul>
+<p class="titoloCentro">Dettaglio delle spese</p>
+    <table summary="Tabella con il costo di una prenotazione da addebitare al cliente, compresa di prezzo dell'appartamento unito al prezzo complessivo dei servizi" class="tabellaGestione">
+        <thead>
+        <tr>
+            <th id="c1" scope="col">Riga</th>
+            <th id="c2" scope="col">Descrizione</th>
+            <th id="c3" scope="col">Prezzo</th>
+        </tr>
+        </thead>
+        <tbody>
+            {listaServizi}
+        </tbody>
+        
+    </table>
+
+

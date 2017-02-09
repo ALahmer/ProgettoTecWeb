@@ -1,0 +1,29 @@
+<span id="messaggi">{messaggi}</span>
+<div class="prenotazioniApp">
+    <h1>Inserimento appartamento</h1>
+    <form method="post" action="aggiuntaAppartamenti.php" enctype="multipart/form-data">
+        <ul class="form1">
+            <li><label for="immagine">immagine<span class="required">*</span></label><input type="file" id="immagine" name="immagine"/></li>
+            <li><label for="id">codice appartamento<span class="required">*</span></label><input type="text" id="id" name="id"/></li>   
+            <li><label for="npers">massimo persone<span class="required">*</span></label><input type="text" id="npers" name="npers"/></li>
+            <li><label for="dim">dimensione<span class="required">*</span></label><input type="text" id="dim" name="dim"/></li>
+
+            <li><label for="desc">descrizione<span class="required">*</span></label><textarea id="desc"  name="desc" rows="8" cols="80"></textarea></li>
+            <li><input type="submit" name="inserisci" value="Inserisci" onclick="return inserimentoAppartamenti();"/></li>
+        </ul>
+    </form>
+</div>
+<div class="appartamenti">
+    <h1>Appartamenti gi&agrave; inseriti</h1>
+    <table summary="Tabella contenente gli appartamenti inseriti, elencati per nome, capienza e opzioni di modifica e eliminazione" class="tabellaGestione">
+        <thead>
+        <tr><th id="c1" scope="col">Nome Appartamento</th>
+            <th id="c2" scope="col">Capienza</th>
+            <th id="c3" scope="col">Opzioni</th>
+        </tr>
+        </thead>
+        <tbody>
+            {tbody}
+        </tbody>
+    </table>
+</div>

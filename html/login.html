@@ -1,0 +1,51 @@
+<span id="messaggi">{messaggi}</span>
+    <div class="containerdx">
+    <h1><span lang="en">Login</span></h1>
+        <form method="POST" action="">
+
+        <ul class="form1">
+            <li>
+                <label>Email <span class="required">*</span></label>
+                <input type="text" name="email" id="emailLogin" class="field-long"/>
+            </li>
+            <li>
+                <label>Password <span class="required">*</span></label>
+                <input type="password" name="password" id="passwordLogin" class="field-long"/>
+            </li>
+            <li>
+                <input type="submit" name="accedi" value="Accedi" onclick="return checkLogin()"/>
+            </li>
+        </ul>
+        </form>
+    </div>
+
+    <div class="containersx">
+    <h1>Registrazione</h1>
+        <form method="POST" action="">
+        <ul class="form1">
+            <li><label>Nome<span class="required">*</span></label>
+            <input type="text" name="nome" id="nome" class="field-long"/>
+            <li><label>Cognome <span class="required">*</span></label>
+            <input type="text" name="cognome" id="cognome" class="field-long" /></li>
+            <li>
+                <label>Email <span class="required">*</span></label>
+                <input type="text" name="email" id="email" class="field-long" />
+            </li>
+            <li>
+                <label>Codice Fiscale <span class="required">*</span></label>
+                <input type="text" name="codiceFiscale" id="codiceFiscale" />
+            </li>
+            <li>
+                <label>Partita IVA </label>
+                <input type="text" name="partitaIVA" id="Piva" class="field-long" />
+            </li>
+            <li>
+                <label>Password <span class="required">*</span></label>
+                <input type="password" name="password" id="password" />
+            </li>
+            <li>
+                <input type="submit" name="registrati" value="Registrati" onclick="return checkRegistra()"/>
+            </li>
+        </ul>
+        </form>
+    </div>

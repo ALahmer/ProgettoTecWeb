@@ -1,0 +1,17 @@
+<span id="messaggi">{messaggi}</span>
+<div class="prenotazioniApp">
+    <h1>Scegli e prenota l'appartamento</h1>
+    <p>Sar&agrave; possibile annullare la prenotazione fino a 7 giorni prima della partenza, senza costi aggiuntivi, in seguito verr&agrave; richiesta una somma pari al 30% dell'affitto complessivo per l'annullamento</p>
+    <h1>Scegli il periodo</h1>
+    <form method="post" action="" class="form1">
+        <ul>
+        <li><label for="da">Dal:</label><input type="text" id="da" name="da"/></li>
+        <li><label for="a">Al:</label><input type="text" id="a" name="a"/></li>
+        <li><label for="npers">Numero persone:</label><input type="text" id="npers" name="npers"/></li>
+        <li><input type="submit" id="cerca" name="cerca" onclick="return checkPrenota()"/></li>
+        </ul>
+    </form>
+</div>
+<div class="appartamenti">
+    {divlista}
+</div>

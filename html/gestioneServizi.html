@@ -1,0 +1,32 @@
+<span id="messaggi">{messaggi}</span>
+<div class="prenotazioniApp">
+    <h1>Aggiungi servizio</h1>
+    <form method="post" action="servizi.php">
+        <ul class="form1">
+            <li><label for="nome">nome</label><input type="text" id="nome" name="nome" /></li>
+            <li><label for="costo">costo</label><input type="text" id="costo" name="costo" /></li>
+            <li><label for="unita">unità</label><select name="unita" id="unita">
+            <option value="persona">persona</option>
+            <option value="appartamento">appartamento</option>
+            <option value="giornaliero">giornaliero</option>
+            </select></li>
+            <li><input type="submit" name="inserisci" value="Aggiungi" class=""  onclick="return checkServizio()" /></li>
+        </ul>
+    </form>
+</div>
+<div class="appartamenti">
+    <h1>Lista dei servizi</h1>
+    <table summary="Tabella contenente i vari servizi che gli utenti possono aggiungere, ordinati per nome e costo e l'opzione possibile quale l'eliminazione" class="tabellaGestione">
+        <thead>
+        <tr>
+            <th id="c1" scope="col">Nome</th>
+            <th id="c2" scope="col">Costo</th>
+            <th id="c3" scope="col">Unità</th>
+            <th id="c4" scope="col">Opzioni</th>
+        </tr>
+        </thead>
+        <tbody>
+           {tbody}
+        </tbody>
+    </table>
+</div>

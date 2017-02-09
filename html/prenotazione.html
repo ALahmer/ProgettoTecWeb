@@ -1,0 +1,18 @@
+<span id="messaggi">{messaggi}</span>
+<h1>Stai prenotando l'appartamento {appartamento} </h1>
+    <form method="post" action="" class="form1">
+        <dl class="listaServizi">
+            <dt class="titoloCentro">Servizi disponibili</dt>
+            <dd>Seleziona i servizi che vuoi aggiungere alla tua prenotazione:</dd>
+            {listaServizi}
+        </dl>
+        <dl class="listaPeriodo">
+            <dt class="titoloCentro">Periodo</dt>
+            <dd><label for="da">Dal:</label><input type="text" id="da" name="da"/></dd>
+            <dd><label for="a">Al:</label><input type="text" id="a" name="a"/></dd>
+            <dd><label for="npers">Numero persone:</label><input type="text" id="npers" name="npers"/></dd>
+            <dd class="centro"><input type="submit" id="conferma" name="conferma" value="Conferma" onclick="return checkPrenota()"/></dd>
+        </dl>
+    </form>
+
+

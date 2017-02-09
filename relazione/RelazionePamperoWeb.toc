@@ -1,0 +1,21 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Abstract}{3}{section.1}
+\contentsline {section}{\numberline {2}Progettazione}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Struttura}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Organizzazione cartelle}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Database}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Struttura del sito}{5}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Presentazione}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}CSS3}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}JavaScript}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Php}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}XHTML}{7}{subsection.2.6}
+\contentsline {section}{\numberline {3}Accessibilit\IeC {\`a}}{8}{section.3}
+\contentsline {section}{\numberline {4}Validazione}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}XHTML Strict}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}CSS3}{8}{subsection.4.2}
+\contentsline {section}{\numberline {5}Credenziali}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Credenziali utenti}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Credenziali amministratore}{9}{subsection.5.2}
+\contentsline {section}{\numberline {6}Ruoli}{9}{section.6}

@@ -1,0 +1,41 @@
+<span id="messaggi">{messaggi}</span>
+<div class="prenotazioniApp">
+    <h1>Modifica appartamento {IdAppartamento}</h1>
+    <form method="post" action="modificaAppartamento.php?id={appartamento}" enctype="multipart/form-data">
+        <ul class="form1">
+            <li><label for="immagineAtt">Immagine Attule</label> {immagineAttuale} </li>    
+            <li><label for="immagine">Modifica immagine</label><input type="file" id="immagine" name="immagine"/></li>    
+            <li><label for="npers">Modifica massimo persone</label><input type="text" id="npers"  name="npers" value="{npers}"/></li>
+            <li><label for="dim">Modifica dimensione</label><input type="text" id="dim"  name="dim" value="{dimensione}"/></li>
+            <li><label for="desc">Modifica descrizione</label><textarea id="desc"  name="desc" cols="80" rows="9">{descrizione}</textarea></li>
+            <li><input type="submit" name="modificaAppartamento" value="Modifica" onclick="return modificaAppartamenti();"/></li>
+        </ul>
+    </form>
+</div>
+<div class="appartamenti">
+    <h1>Periodi di costo</h1>
+    <form method="post" action="?modifica={IdAppartamento}" class="formcerca">
+        <ul>
+            <li><label for="inizio">Data inizio</label></li>
+            <li><input type="text" id="inizio" name="inizio"/></li>
+            <li><label for="fine">Data fine</label></li>
+            <li><input type="text" id="fine" name="fine"/></li>   
+            <li><label for="costo">Costo giornaliero</label></li>
+            <li><input type="text" id="costo" name="costo"/></li>
+            <li><input type="submit" name="aggiungi" value="Aggiungi" onclick="return checkCostoAppartamento();"/></li>
+            <!-- <li><input type="submit" name="aggiungi" value="aggiungi" /></li> -->
+        </ul>
+    </form>
+    <table summary="Tabella con i prezzi dell'appartamento nei vari periodi dell'anno ordinati per data di inizio e di fine periodo, prezzo giornaliero e opzione di eliminazione" class="tabellaGestione">
+        <thead>
+        <tr><th id="c1" scope="col">data inizio</th>
+            <th id="c2" scope="col">data fine</th>
+            <th id="c3" scope="col">prezzo giornaliero (euro)</th>
+            <th id="c4" scope="col">opzioni</th>
+        </tr>
+        </thead>
+        <tbody>
+            {tbody}
+        </tbody>
+    </table>
+</div>

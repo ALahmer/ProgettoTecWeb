@@ -1,0 +1,24 @@
+<span id="messaggi">{messaggi}</span>
+<h1>Gestione prenotazioni</h1>
+<form method="post" action=""  class="formcerca">
+        <ul class="">
+            <li><label for="da">Data inizio</label><input type="text" id="da" name="da"/></li>
+            <li><label for="a">Data fine</label><input type="text" id="a" name="a"/></li>   
+            <li><input type="submit" name="filtra" value="Filtra" onclick="return checkFiltroData();"/></li>
+        </ul>
+    </form>
+
+<table summary="Tabella con le prenotazioni in programma. Tabella contenente l'appartamento prenotato, la data di inizio e fine prenotazione, lo stato di prenotazione e le opzioni possibili, quali checkin, checkout e fattura" id="prenotazioni" class="tabellaGestione">
+    <thead><tr>
+        <th id="c1" scope="col">Appartamento</th>
+        <th id="c2" scope="col">Data inizio</th>
+        <th id="c3" scope="col">Data fine</th>
+        <th id="c4" scope="col">Stato</th>
+        <th id="c5" scope="col">Opzioni</th>
+    </tr>
+    </thead>
+    <tbody>
+            {tbody}
+    </tbody>
+</table>
+
